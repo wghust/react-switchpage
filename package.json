@@ -1,0 +1,63 @@
+{
+  "name": "react-switchpage",
+  "version": "1.0.0",
+  "description": "基于switchPage的react开发架构",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js -p --progress --watch --devServer --hide-modules",
+    "build": "webpack --config ./build/webpack.config.js -p --progress --hide-modules",
+    "watch": "webpack --config ./build/webpack.config.js -p --progress --hide-modules --watch",
+    "server": "cross-env NODE_ENV=server gulp connect",
+    "upload": "chaos send -c server.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.tongbanjie.com:tbj_tpl/react-switchpage.git"
+  },
+  "keywords": [
+    "react",
+    "switchpage"
+  ],
+  "author": "zhishui",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "gulp": "^4.0.1",
+    "gulp-connect": "^5.7.0",
+    "html-webpack-include-assets-plugin": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "terser-webpack-plugin": "^1.2.3",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-middleware": "^3.6.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@tbj/magneto": "^1.0.4",
+    "@tbj/switchpage": "^0.7.2",
+    "@tbj/track": "^1.0.5",
+    "@tbj/wheel": "^1.3.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}
